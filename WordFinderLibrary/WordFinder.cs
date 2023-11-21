@@ -1,6 +1,6 @@
 ﻿namespace WordFinderLibrary
 {
-    public class WordFinder
+    public class WordFinder : IWordFinder
     {
         /// <summary>
         /// this property contains the matrix

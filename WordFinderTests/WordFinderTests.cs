@@ -90,7 +90,7 @@ namespace WordFinderTests
             matrix.Add(row8);
             matrix.Add(row9);
 
-            var wf = new WordFinder(matrix);
+            IWordFinder wf = new WordFinder(matrix);
 
             List<string> streamWord = new List<string>() { "cat", "dog" };
 
@@ -169,7 +169,7 @@ namespace WordFinderTests
             List<string> wordstream = new List<string>() { "sun", "moon", "hello", "cold", "chill", "cat", "dog", "red", "blue", "word", "character" };
 
 
-            WordFinder wf = new WordFinder(matrix);
+            IWordFinder wf = new WordFinder(matrix);
 
             IEnumerable<string> result = wf.Find(wordstream);
 
